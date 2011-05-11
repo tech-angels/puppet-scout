@@ -1,0 +1,16 @@
+=========================
+ Puppet module for scout
+=========================
+
+This puppet module installs and manages the scoutapp.com agent.
+
+Using this module is simple. Include it in your node definition and set a scout key variable.
+If you use the mysql module including scout::mysql will install the ruby library needed to run scout mysql plugins.
+
+Example
+-------
+
+node foo.example.com {
+  $scout_key = 'fea6b370-d2c8-7d2c-d52b-d25790ab2fb0'
+  include scout
+}
