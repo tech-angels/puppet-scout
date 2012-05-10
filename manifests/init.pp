@@ -1,7 +1,7 @@
 # Manages scoutapp.com agent
 class scout {
   package {
-    ['scout', 'SystemTimer', 'elif']:
+    ['scout', 'SystemTimer', 'elif', 'request-log-analyzer']:
       ensure   => 'installed',
       provider => 'gem';
   }
