@@ -10,7 +10,7 @@ class scout($scout_key=false) {
   if $scout_key {
     cron {
       'scout':
-        command => "/var/lib/gems/1.8/bin/scout ${scout_key}",
+        command => "/usr/local/bin/scout ${scout_key}",
         user	=> 'scout';
     }
   }
